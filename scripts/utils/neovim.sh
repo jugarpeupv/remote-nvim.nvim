@@ -44,7 +44,7 @@ function _linux_asset_name {
 	# If version is less than 0.10.4, there is no architecture in the download URL
 	# else it has to be added into the URL suffix.
 	local version="$1" arch_type="$2"
-	local asset_name="nvim-linux-${arch_type}.appimage"
+	local asset_name="nvim-${version}-linux-${arch_type}.appimage"
 
 	info "Determining asset name for Neovim version $version on Linux with architecture $arch_type"
 	local is_lesser
